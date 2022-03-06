@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# install necessary softwares 
+sudo apt install zsh curl tmux fonts-powerline
+
+# Check if oh-my-zsh is installed
+OMZDIR="$HOME/.oh-my-zsh"
+if [[ ! -d "$OMZDIR" ]]; then
+  echo 'Installing oh-my-zsh'
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+else
+  echo 'Using oh-my-zsh'
+fi
