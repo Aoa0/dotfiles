@@ -11,3 +11,19 @@
 [submodule "oh-my-zsh/custom/plugins/zsh-autosuggestions"]
 	path = oh-my-zsh/custom/plugins/zsh-autosuggestions
 	url = git@github.com:zsh-users/zsh-autosuggestions.git
+[submodule "vim/pack/vendor/start/vim-airline"]
+	path = vim/pack/vendor/start/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git
+	ignore = untracked
+[submodule "vim/pack/vendor/start/vim-airline-themes"]
+	path = vim/pack/vendor/start/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git
+	ignore = untracked
+[submodule "vim/pack/vendor/start/vim-colors-solarized"]
+	path = vim/pack/vendor/start/vim-colors-solarized
+	url = git@github.com:altercation/vim-colors-solarized.git
+	ignore = untracked
+
+[submodule "vim/pack/vendor/start/vim-solarized8"]
+	path = vim/pack/vendor/start/vim-solarized8
+	url = git@github.com:lifepillar/vim-solarized8.git

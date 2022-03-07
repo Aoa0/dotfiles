@@ -17,3 +17,15 @@ set mouse+=a " enable mouse mode (scrolling, selection, etc)
 " open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
+set laststatus=2
+
+" let g:airline_theme='bubblegum'
+" let g:airline_theme='solarized'
+
+let g:airline#extensions#tabline#enabled = 1
+
+syntax enable
+set t_Co=256
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized8
