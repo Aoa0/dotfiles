@@ -2,6 +2,7 @@
     link:
       create: true
       relink: true
+      force: true
 
 # - shell:
 #   - [sh init, Running Init script]
@@ -15,6 +16,7 @@
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim
     ~/.vimrc: vimrc
+    ~/.shell: shell
 
 # - create:
 

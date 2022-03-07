@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # install necessary softwares 
-sudo apt install zsh curl tmux fonts-powerline
+sudo apt update -y
+sudo apt install -y zsh curl tmux fonts-powerline
 
 # Check if oh-my-zsh is installed
 OMZDIR="$HOME/.oh-my-zsh"
