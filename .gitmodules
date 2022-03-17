@@ -26,3 +26,8 @@
 [submodule "vim/pack/vendor/start/vim-solarized8"]
 	path = vim/pack/vendor/start/vim-solarized8
 	url = https://github.com/lifepillar/vim-solarized8.git
+	ignore = untracked
+[submodule "vim/pack/vendor/start/nerdtree"]
+	path = vim/pack/vendor/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+	ignore = untracked
