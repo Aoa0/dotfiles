@@ -7,16 +7,17 @@
 # - shell:
 #   - [sh init, Running Init script]
 
-- clean: ['~', '~/.oh-my-zsh/custom/', '~/.oh-my-zsh/custom/plugins/', '~/.oh-my-zsh/custom/themes/']
+- clean: ['~']
 
 - link:
     ~/.bashrc: bashrc
-    ~/.oh-my-zsh/custom: oh-my-zsh/custom
+    ~/.oh-my-zsh-custom: oh-my-zsh/custom
     ~/.zshrc: zshrc
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.shell: shell
+
 
 # - create:
 
