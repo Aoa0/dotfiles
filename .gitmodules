@@ -35,3 +35,31 @@
 	path = vim/pack/vendor/start/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
 	ignore = untracked
+[submodule "vim/pack/vendor/start/vim-easymotion"]
+	path = vim/pack/vendor/start/vim-easymotion
+	url = https://github.com/easymotion/vim-easymotion.git
+	ignore = untracked
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
+	ignore = untracked
+[submodule "tmux/plugins/tmux-pain-control"]
+	path = tmux/plugins/tmux-pain-control
+	url = https://github.com/tmux-plugins/tmux-pain-control.git
+	ignore = untracked
+[submodule "tmux/plugins/tmux-sensible"]
+	path = tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible.git
+	ignore = untracked
+[submodule "tmux/plugins/tmux-copycat"]
+	path = tmux/plugins/tmux-copycat
+	url = https://github.com/tmux-plugins/tmux-copycat.git
+	ignore = untracked
+[submodule "tmux/plugins/tmux-prefix-highlight"]
+	path = tmux/plugins/tmux-prefix-highlight
+	url = https://github.com/tmux-plugins/tmux-prefix-highlight.git
+	ignore = untracked
+[submodule "tmux/plugins/tmux-colors-solarized"]
+	path = tmux/plugins/tmux-colors-solarized
+	url = https://github.com/seebi/tmux-colors-solarized.git
+	ignore = untracked
