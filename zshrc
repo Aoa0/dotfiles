@@ -103,3 +103,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 source ~/.shell/aliases.sh
+
+# Cmds
+source ~/.shell/cmd.sh

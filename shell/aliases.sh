@@ -12,14 +12,6 @@ alias grep='grep --color'
 alias cp='cp -i'
 alias mv='mv -i'
 
-# Update dotfiles
-dfu() {
-    (
-        cd ~/.dotfiles && git pull --ff-only && ./install -q
-    )
-}
+# cd to git root directory
+alias cdgr='cd "$(git root)"'
 
-# Create a directory and cd into it
-mcd() {
-    mkdir "${1}" && cd "${1}"
-}

@@ -31,3 +31,7 @@
 	path = vim/pack/vendor/start/nerdtree
 	url = https://github.com/preservim/nerdtree.git
 	ignore = untracked
+[submodule "vim/pack/vendor/start/vim-gutentags"]
+	path = vim/pack/vendor/start/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags.git
+	ignore = untracked
