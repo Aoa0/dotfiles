@@ -2,7 +2,7 @@
 
 # install necessary softwares 
 sudo apt update -y
-sudo apt install -y zsh curl tmux python3-pip fontconfig fzf
+sudo apt install -y zsh curl tmux python3-pip fontconfig fzf universal-ctags
 
 # Check if oh-my-zsh is installed
 OMZDIR="$HOME/.oh-my-zsh"

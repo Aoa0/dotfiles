@@ -63,3 +63,11 @@
 	path = tmux/plugins/tmux-colors-solarized
 	url = https://github.com/seebi/tmux-colors-solarized.git
 	ignore = untracked
+[submodule "vim/pack/vendor/start/fzf"]
+	path = vim/pack/vendor/start/fzf
+	url = https://github.com/junegunn/fzf.git
+	ignore = untracked
+[submodule "vim/pack/vendor/start/fzf.vim"]
+	path = vim/pack/vendor/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+	ignore = untracked
