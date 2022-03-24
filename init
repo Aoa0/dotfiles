@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
-# install necessary softwares 
+# install necessary softwares
 sudo apt update -y
-sudo apt install -y zsh curl tmux python3-pip fontconfig fzf universal-ctags
+sudo apt install -y zsh curl tmux python3-pip fontconfig  silversearcher-ag 
+
+# these packages are not available on Ubuntu <= 18.04
+sudo apt install -y fzf universal-ctags ripgrep
 
 # Check if oh-my-zsh is installed
 OMZDIR="$HOME/.oh-my-zsh"
@@ -12,3 +15,4 @@ if [[ ! -d "$OMZDIR" ]]; then
 else
   echo 'Updating oh-my-zsh'
 fi
+

@@ -89,3 +89,14 @@ autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
 " let g:airline_theme='bubblegum'
 " let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled = 1
+
+" gutentags
+let g:gutentags_ctags_tagfile = '.tags'
+let s:vim_tags = expand('~/.cache/tags')
+let g:gutentags_cache_dir = s:vim_tags
+if !isdirectory(s:vim_tags)
+   silent! call mkdir(s:vim_tags, 'p')
+endif
+
+" fzf
+nnoremap <silent> <C-f> :Files<CR>

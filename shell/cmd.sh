@@ -44,3 +44,14 @@ xin() {
 nonascii() {
     LC_ALL=C grep -n '[^[:print:][:space:]]' "${1}"
 }
+
+use_pwndbg() {
+    mv ~/.gdbinit ~/.gdbinit.bak
+    cd ~/.dotfiles/tools/pwndbg
+    ./setup.sh
+}
+
+use_gef() {
+    mv ~/.gdbinit ~/.gdbinit.bak
+    echo "source ~/.dotfiles/tools/gef/gef.py" >> ~/.gdbinit
+}
