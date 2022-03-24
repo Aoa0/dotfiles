@@ -45,13 +45,20 @@ nonascii() {
     LC_ALL=C grep -n '[^[:print:][:space:]]' "${1}"
 }
 
+backup_gitignore() {
+    if [ -f ~/.gdbinit ] || [ -h ~/.gdbinit ]; then
+        echo "backing up gdbinit file"
+        mv ~/.gdbinit ~/.gdbinit.bak
+    fi
+}
+
 use_pwndbg() {
-    mv ~/.gdbinit ~/.gdbinit.bak
+    backup_gitignore
     cd ~/.dotfiles/tools/pwndbg
     ./setup.sh
 }
 
 use_gef() {
-    mv ~/.gdbinit ~/.gdbinit.bak
+    backup_gitignore
     echo "source ~/.dotfiles/tools/gef/gef.py" >> ~/.gdbinit
 }
