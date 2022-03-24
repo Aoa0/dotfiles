@@ -15,3 +15,5 @@ alias mv='mv -i'
 # cd to git root directory
 alias cdgr='cd "$(git rev-parse --show-toplevel)"'
 
+
+# git related aliase are defined in oh-my-zsh/plugins/git/git.plugin.zsh

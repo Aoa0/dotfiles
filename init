@@ -2,7 +2,7 @@
 
 # install necessary softwares
 sudo apt update -y
-sudo apt install -y zsh curl tmux python3-pip fontconfig  silversearcher-ag 
+sudo apt install -y zsh curl tmux python3-pip fontconfig  silversearcher-ag htop
 
 # these packages are not available on Ubuntu <= 18.04
 sudo apt install -y fzf universal-ctags ripgrep

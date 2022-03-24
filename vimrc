@@ -67,6 +67,10 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" set space as leader
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
 
 "---------------------
 " Plugin configuration

@@ -45,7 +45,7 @@ nonascii() {
     LC_ALL=C grep -n '[^[:print:][:space:]]' "${1}"
 }
 
-backup_gitignore() {
+backup_gdbinit() {
     if [ -f ~/.gdbinit ] || [ -h ~/.gdbinit ]; then
         echo "backing up gdbinit file"
         mv ~/.gdbinit ~/.gdbinit.bak
@@ -53,12 +53,17 @@ backup_gitignore() {
 }
 
 use_pwndbg() {
-    backup_gitignore
+    backup_gdbinit
     cd ~/.dotfiles/tools/pwndbg
     ./setup.sh
 }
 
 use_gef() {
-    backup_gitignore
+    backup_gdbinit
     echo "source ~/.dotfiles/tools/gef/gef.py" >> ~/.gdbinit
+}
+
+# Serve current directory
+serve() {
+    python3 -m http.server
 }
