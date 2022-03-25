@@ -35,7 +35,7 @@ set history=8192 " more history
 set lbr " line break
 set scrolloff=5 " show lines above and below cursor (when possible)
 set backspace=indent,eol,start " allow backspacing over everything
-set autochdir " automatically set current directory to directory of last opened file
+" set autochdir " automatically set current directory to directory of last opened file
 set hidden " allow auto-hiding of edited buffers
 " use 4 spaces instead of tabs during formatting
 set expandtab
@@ -70,6 +70,7 @@ nnoremap <C-l> <C-w>l
 " set space as leader
 nnoremap <SPACE> <Nop>
 map <SPACE> <leader>
+
 
 "---------------------
 " Plugin configuration

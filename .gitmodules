@@ -73,7 +73,9 @@
 	ignore = untracked
 [submodule "tools/gef"]
 	path = tools/gef
-	url = https://github.com/hugsy/gef.git
+    url = https://github.com/hugsy/gef.git
+    ignore = untracked
 [submodule "tools/pwndbg"]
 	path = tools/pwndbg
-	url = https://github.com/pwndbg/pwndbg.git
+    url = https://github.com/pwndbg/pwndbg.git
+    ignore = untracked

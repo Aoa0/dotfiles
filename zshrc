@@ -106,3 +106,6 @@ source ~/.shell/aliases.sh
 
 # Cmds
 source ~/.shell/cmd.sh
+
+# for apt-installed fzf completion
+source /usr/share/doc/fzf/examples/completion.zsh
