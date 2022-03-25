@@ -69,16 +69,16 @@ nnoremap <C-l> <C-w>l
 
 " set space as leader
 nnoremap <SPACE> <Nop>
-let mapleader=" "
-
+map <SPACE> <leader>
 
 "---------------------
 " Plugin configuration
 "---------------------
 
 " nerdtree
-nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader>t :NERDTreeToggle<CR>
 nnoremap <Leader>f :NERDTreeFind<CR>
+
 " Start NERDTree. If a file is specified, move the cursor to its window.
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
@@ -103,4 +103,5 @@ if !isdirectory(s:vim_tags)
 endif
 
 " fzf
-nnoremap <silent> <C-f> :Files<CR>
+nnoremap <silent> <C-f> :Rg<CR>
+nnoremap <silent> <C-p> :Files<CR>
