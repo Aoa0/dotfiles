@@ -28,7 +28,7 @@ set autoindent
 set autoindent
 set nu " number lines
 " set rnu " relative line numbering
-" set mouse=a " enable mouse mode (scrolling, selection, etc)
+set mouse=a " enable mouse mode (scrolling, selection, etc)
 set hlsearch " Highlight search results
 set incsearch " Makes search act like search in modern browsers
 set history=8192 " more history
@@ -71,14 +71,18 @@ nnoremap <C-l> <C-w>l
 nnoremap <SPACE> <Nop>
 map <SPACE> <leader>
 
-
-"---------------------
 " Plugin configuration
 "---------------------
 
+" easymotion
+nmap f <Plug>(easymotion-overwin-f)
+map <leader>/ <Plug>(easymotion-bd-w)
+nmap <leader>/ <Plug>(easymotion-overwin-w)
+let g:EasyMotion_do_mapping = 0
+
 " nerdtree
-nnoremap <Leader>t :NERDTreeToggle<CR>
-nnoremap <Leader>f :NERDTreeFind<CR>
+nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
 
 " Start NERDTree. If a file is specified, move the cursor to its window.
 autocmd StdinReadPre * let s:std_in=1
