@@ -108,7 +108,9 @@ source ~/.shell/aliases.sh
 source ~/.shell/cmd.sh
 
 # for apt-installed fzf completion
-source /usr/share/doc/fzf/examples/completion.zsh
-
+fzfcompletion="/usr/share/doc/fzf/examples/completion.zsh"
+if [[ -f fzfcompletion ]]; then
+    source $fzfcompletion
+fi
 
 export EDITOR=vim

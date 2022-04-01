@@ -60,6 +60,14 @@ set laststatus=2
 set splitbelow
 set splitright
 
+" auto closing
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
 
 " quicker window movement
 nnoremap <C-j> <C-w>j
