@@ -112,5 +112,5 @@ fzfcompletion="/usr/share/doc/fzf/examples/completion.zsh"
 if [[ -f fzfcompletion ]]; then
     source $fzfcompletion
 fi
-
-export EDITOR=vim
+export VISUAL=vim
+export EDITOR="$VISUAL"
