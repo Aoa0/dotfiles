@@ -67,3 +67,14 @@ use_gef() {
 serve() {
     python3 -m http.server
 }
+
+set_wsl_proxy() {
+    hostip=$(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')
+    port=${ssport:-1080}
+    export all_proxy="socks5://${hostip}:${port}"
+}
+
+unset_proxy() {
+    unset all_proxy
+}
+
