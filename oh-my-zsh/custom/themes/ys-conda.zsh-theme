@@ -56,7 +56,9 @@ virtenv_prompt() {
 # Conda
 local conda_info='$(conda_prompt_info)'
 conda_prompt_info() {
-    if [ -n "$CONDA_DEFAULT_ENV" ]; then
+    if ! command -v conda &> /dev/null; then
+    	echo -n ""
+    elif [ -n "$CONDA_DEFAULT_ENV" ]; then
         echo -n "($CONDA_DEFAULT_ENV) "
     else
         echo -n "(base) "
