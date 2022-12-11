@@ -74,6 +74,7 @@
 [submodule "tools/gef"]
 	path = tools/gef
 	url = https://github.com/hugsy/gef.git
+	branch = main
 	ignore = untracked
 [submodule "tools/pwndbg"]
 	path = tools/pwndbg
